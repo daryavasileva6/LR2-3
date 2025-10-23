@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сравнение автомобилей</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    figure {
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      width: 95%;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #999;
+      text-align: center;
+    }
+
+    caption {
+      font-size: 1.6em;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    mark {
+      background-color: #ffe066;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+
+    details {
+      font-size: 0.9em;
+    }
+
+    tfoot td {
+      font-size: 0.85em;
+      color: #555;
+      text-align: left;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Сравнение автомобилей: Lamborghini, Voyah и Jaguar</h1>
+
+<div class="gallery">
+  <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Lamborghini_Revuelto.jpg" alt="Lamborghini Revuelto">
+    <figcaption>Lamborghini Revuelto</figcaption>
+  </figure>
+  <figure>
+    <img src="https://ev-database.org/img/auto/Voyah_Free_106_kWh/Voyah_Free_106_kWh-01.jpg" alt="Voyah Free EV">
+    <figcaption>Voyah Free EV</figcaption>
+  </figure>
+  <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Jaguar_F-Type_R_Coupe.jpg" alt="Jaguar F-Type R">
+    <figcaption>Jaguar F-Type R</figcaption>
+  </figure>
+</div>
+
+<table>
+  <caption>Характеристики автомобилей</caption>
+  <thead>
+    <tr>
+      <th>Характеристика</th>
+      <th>
+        <details>
+          <summary>Lamborghini</summary>
+          Италия, Revuelto, Суперкар
+        </details>
+      </th>
+      <th>
+        <details>
+          <summary>Voyah</summary>
+          Китай, Free EV, Электрокроссовер
+        </details>
+      </th>
+      <th>
+        <details>
+          <summary>Jaguar</summary>
+          Великобритания, F-Type R, Спорткар
+        </details>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Самая дорогая модель</td>
+      <td><mark>Revuelto — ~45 млн ₽</mark></td>
+      <td>Passion — ~5.6 млн ₽</td>
+      <td>F-Type R — ~10.5 млн ₽</td>
+    </tr>
+    <tr>
+      <td>Самая дешёвая модель</td>
+      <td>Gallardo — ~6 млн ₽</td>
+      <td><mark>Free — ~3.35 млн ₽</mark></td>
+      <td>XE — ~4.5 млн ₽</td>
+    </tr>
+    <tr>
+      <td>Двигатель</td>
+      <td><mark>V12 гибрид, 6.5 л</mark></td>
+      <td>Электро + 1.5 л турбо</td>
+      <td>V8, 5.0 л</td>
+    </tr>
+    <tr>
+      <td>Расход топлива</td>
+      <td>~17 л/100 км</td>
+      <td><mark>0 л/100 км (EV)</mark></td>
+      <td>~11 л/100 км</td>
+    </tr>
+    <tr>
+      <td>Скорость (0–100 км/ч)</td>
+      <td><mark>2.5 сек</mark></td>
+      <td>4.4 сек</td>
+      <td>3.7 сек</td>
+    </tr>
+    <tr>
+      <td>Экологические сертификаты</td>
+      <td>EURO 6</td>
+      <td><mark>EV — нулевые выбросы</mark></td>
+      <td>EURO 6</td>
+    </tr>
+    <tr>
+      <td>Гарантийный срок</td>
+      <td>3 года</td>
+      <td><mark>5 лет / 100 000 км</mark></td>
+      <td>3 года</td>
+    </tr>
+    <tr>
+      <td>Максимальная скорость</td>
+      <td><mark>350 км/ч</mark></td>
+      <td>200 км/ч</td>
+      <td>300 км/ч</td>
+    </tr>
+    <tr>
+      <td>Тип трансмиссии</td>
+      <td><mark>Автомат (e-DCT)</mark></td>
+      <td>Автомат</td>
+      <td>Автомат</td>
+    </tr>
+    <tr>
+      <td>Количество передач</td>
+      <td><mark>8</mark></td>
+      <td>1 (EV)</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4">* Данные ориентировочные, актуальны на 2025 год. Характеристики могут меняться в зависимости от комплектации и рынка.</td>
+    </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>
